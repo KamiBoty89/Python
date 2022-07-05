@@ -20,7 +20,7 @@ R= UNIX, Solaris, Linux, DOS, Windows, OS/2, Mac OS, etc., por lo que si no util
 1.3 Ejercicio 1 (2 puntos)
 
 Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
-{
-     print('¿Cual es tu nombre?')
-     nom=input()
-     print('Hola '+nom)
+
+            print('¿Cual es tu nombre?')
+            nom=input()
+            print('Hola '+nom)
