@@ -8,7 +8,7 @@ Realiza los ejercicios de acuerdo a las indicaciones
 Escribir un programa que convierta un valor dado en grados Fahrenheit a grados
 Celsius.
 
-     print('Indica el valor en grados Fahrenheit')
+       print('Indica el valor en grados Fahrenheit')
        far=int(input('Grados fahrenheit:'))
        cen=(far-32)*5/9  
        print(far,'°F son ',cen, '°C')
