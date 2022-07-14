@@ -87,21 +87,21 @@ Ejemplo: si ingresamos el 10 nos imprima del 1 a ese 10 cuales números son prim
 
 Respuesta:
 
-    print('Ingressa un numero entero positivo')
-    numero=int(input('Numero:'))
-    j=1
-    lista2=[]
-    while j<=numero:
-     lista=[]
-     i=1   
-     while i<=j:
-         if j%i==0:
-             lista.append(i)    
-         i=i+1  
-     if len(lista)<=2:
-         lista2.append(j)
-     j=j+1         
-    print('Los numeros primos entre el 1 y el numero que ingresaste son:',lista2) 
+        print('Ingressa un numero entero positivo')
+        numero=int(input('Numero:'))
+        j=1
+        lista2=[]
+        while j<=numero:
+         lista=[]
+         i=1   
+         while i<=j:
+             if j%i==0:
+                 lista.append(i)    
+             i=i+1  
+         if len(lista)<=2:
+             lista2.append(j)
+         j=j+1         
+        print('Los numeros primos entre el numero 1 y el numero',numero, 'son:',lista2)     
 
 ## Ejercicio 3 (1.5 puntos)
 Una persona adquirió un producto para pagar en 20 meses. El primer mes pagó
