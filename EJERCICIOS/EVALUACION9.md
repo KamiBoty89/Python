@@ -39,6 +39,12 @@ Obtener el cuadrado de todos los elementos en la lista.
 
 Lista: [1,2,3,4,5,6,7,8,9,10]
 
+Respuesta:
+
+        Lista=[1,2,3,4,5,6,7,8,9,10]
+        for n in range(len(Lista)):
+         print(Lista[n],'elevado al cuadrado es:',Lista[n]**2)
+
 ## Ejercicio 3 (2 puntos)
 Obtener la cantidad de elementos mayores a 5 en la tupla.
 
