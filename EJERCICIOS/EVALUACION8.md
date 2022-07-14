@@ -6,6 +6,17 @@ valores sean los cuadrados de las claves.
 
 Ejemplo: si se ingresa el 4 imprima el cuadrado de 1, de 2, de 3 y de 4
 
+Respuesta:
+
+    print('Ingresa un nuero entero positivo')
+    numero=int(input('Numero:'))
+    diccionario={}
+    for num in range(numero):
+        diccionario[num+1]=(num+1)**2
+        print('El cuadrado de',num+1,'es:',diccionario[num+1])
+
+
+
 ## Ejercicio 2 (2 puntos)
 Escribe un programa que lea una cadena y devuelva un diccionario con la
 cantidad de apariciones de cada carácter en la cadena.
