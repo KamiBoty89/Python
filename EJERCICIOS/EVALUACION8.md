@@ -46,3 +46,63 @@ guardar los precios de las distintas frutas. El programa pedirá el nombre de la
 y la cantidad que se ha vendido y nos mostrará el precio final de la fruta a partir de
 los datos guardados en el diccionario. Si la fruta no existe nos dará un error. Tras
 cada consulta el programa nos preguntará si queremos hacer otra consulta.
+
+Respuesta:
+
+        frutas={'Naranja':12,'Mango':15,'Manzana':20,'Pera':18,'Limon':10,'Aguacate':30,}
+        total=0
+        while True:
+          eleccion = input("""
+           ¿Que fruta desea comprar?
+           --Naranja
+           --Mango
+           --Manzana
+           --Pera
+           --Limon
+           --Aguacate
+           --Salir
+
+           Escriba la opción (primer letra mayuscula): """)
+
+          if eleccion == 'Naranja':
+             kilos=int(input('¿Cuantos kg desea comprar?'))
+             costo=kilos*frutas[eleccion]
+             total=total+costo
+             print('El costo de',kilos,'kg de',eleccion,'es:$',costo)
+
+          elif eleccion == 'Mango':
+             kilos=int(input('¿Cuantos kg desea comprar?'))
+             costo=kilos*frutas[eleccion]
+             total=total+costo
+             print('El costo de',kilos,'kg de',eleccion,'es:$',costo)
+
+          elif eleccion == 'Manzana':
+             kilos=int(input('¿Cuantos kg desea comprar?'))
+             costo=kilos*frutas[eleccion]
+             total=total+costo
+             print('El costo de',kilos,'kg de',eleccion,'es:$',costo)
+
+          elif eleccion == 'Pera':
+             kilos=int(input('¿Cuantos kg desea comprar?'))
+             costo=kilos*frutas[eleccion]
+             total=total+costo
+             print('El costo de',kilos,'kg de',eleccion,'es:$',costo)
+
+          elif eleccion == 'Limon':
+             kilos=int(input('¿Cuantos kg desea comprar?'))
+             costo=kilos*frutas[eleccion]
+             total=total+costo
+             print('El costo de',kilos,'kg de',eleccion,'es:$',costo)
+
+          elif eleccion == 'Aguacate':
+             kilos=int(input('¿Cuantos kg desea comprar?'))
+             costo=kilos*frutas[eleccion]
+             total=total+costo
+             print('El costo de',kilos,'kg de',eleccion,'es:$',costo)
+
+          elif eleccion == 'Salir':
+             print('Gracias, su total es de:$',total)
+             break
+
+          else:
+             print('Opción invalida')  
