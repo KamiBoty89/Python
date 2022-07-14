@@ -65,3 +65,12 @@ Respuesta:
 Obtener la suma de todos los elementos en la lista
 
 lista = [1,2,3,4]
+
+Respuesta:
+
+        lista=[1,2,3,4]
+        suma=0
+        for n in range(len(lista)):
+             suma=suma+lista[n]
+        print('La suma de los numeros de la lista es:',suma)
+
