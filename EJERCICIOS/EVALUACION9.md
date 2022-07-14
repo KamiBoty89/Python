@@ -17,6 +17,23 @@ Ejemplo. imprime una multiplicacion (9 * 8 =  )por teclado se ingresa la respues
 
 Recuerda el import random
 
+Respuesta:
+
+    import random
+    total=0
+    for n in range(10):
+     n1= random.randint(2, 10)
+     n2= random.randint(2, 10)
+     res=n1*n2
+     print('¿Cuanto da el producto de',n1,'*',n2,'es tu respuesta?')
+     resus=int(input('R='))
+     if resus==res:
+         print('¡¡¡CORRECTO!!!')
+         total=total+1
+     else:    
+         print('¡¡¡INCORRECTO!!!')
+    print('Acertaste',total,'veces.') 
+
 ## Ejercicio 2 (2 puntos)
 Obtener el cuadrado de todos los elementos en la lista.
 
