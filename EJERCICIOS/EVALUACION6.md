@@ -112,3 +112,17 @@ después de los 20 meses.
 Al finalizar los 20 meses pago en total:
 
 primer mes pago 10, segundo mes pago 20, tercer mes pago 30, cuarto mes pago 40, etc.
+
+Respuesta:
+
+        pagos=[]
+        meses=20
+        pago=0
+        total=0
+        for mes in range(meses):
+            pago=pago+10
+            pagos.append(pago)
+            total=total+pago
+        for mes in range(meses):
+         print('El mes',mes+1,'pago :$',pagos[mes]) 
+        print('La cantidad total pagada es de:$',total)
