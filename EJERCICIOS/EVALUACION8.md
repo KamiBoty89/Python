@@ -23,6 +23,23 @@ cantidad de apariciones de cada carácter en la cadena.
 
 Ejemplo: si se ingresa "paloma" p=1 a=2 l=1 o=1 m=1
 
+Respuesta:
+
+        print('Ingresa una palabra')
+        cadena=input('Palabra:')
+        cadena2=[]
+        palabra={}
+        for i in range(len(cadena)):
+            if cadena[i] not in cadena2:
+             cadena2.append(cadena[i])
+        for j in range(len(cadena2)):
+            h=0
+            for k in range(len(cadena)):
+              if cadena[k]==cadena2[j]:
+                 h=h+1
+              palabra[cadena2[j]]=h        
+        print('La palabra '+cadena+' contiene:',palabra)
+
 ## Ejercicio 3 (2 puntos)
 Vamos a crear un programa en python donde vamos a declarar un diccionario para
 guardar los precios de las distintas frutas. El programa pedirá el nombre de la fruta
