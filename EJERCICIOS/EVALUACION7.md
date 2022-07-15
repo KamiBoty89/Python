@@ -109,6 +109,67 @@ introducida es negativa, no se hará nada.
 ● retirar(cantidad): se retira una cantidad a la cuenta. La cuenta puede estar
 en números rojos.
 
+Respuesta:
+
+        class Cuenta():
+
+            def __init__(self,titular,cantidad):
+             self.__titular=titular
+             self.__cantidad=cantidad
+
+            def getTitular(self):
+                return self.__titular
+
+            def getCantidad(self):
+                return self.__cantidad
+
+            def setTitular(self,tit):
+                self.__titular=tit
+
+            def setCantidad(self,ingreso):
+                self.__cantidad=ingreso
+
+            def Mostrar(self):
+             print(f'Titular: {self.getTitular()}')
+             print(f'Saldo:$ {self.getCantidad()}')  
+
+            def Ingresar(self):
+             res=input('Desea ingresar dinero si/no')
+             if res=='si':
+                monto=float(input('Digite la cantidad a ingresar'))
+                while monto<0:
+                    print('Lo siento no puedes ingresar cantidades negativas, intenta de nuevo')
+                    monto=float(input('Digite la cantidad a ingresar'))
+                saldo=float(self.getCantidad())
+                ingreso=saldo+monto
+                self.setCantidad(ingreso)
+             elif res=='no': 
+                print('Ok, es una lastima')
+             else:
+                print('Respuesta equivocada.')
+             print(f'Tu saldo actual es:${self.getCantidad()}')
+
+            def Retirar(self):
+             res=input('Desea retirar dinero si/no')
+             if res=='si':
+                monto=float(input('Digite la cantidad a retirar'))
+                saldo=float(self.getCantidad())
+                retiro=saldo-monto
+                self.setCantidad(retiro)
+             elif res=='no': 
+                print('Gracias por confiar en nosotros')
+             else:
+                print('Respuesta equivocada.')
+             print(f'Tu saldo actual es:${self.getCantidad()}')        
+
+        titular=input('Ingrese nombre del titular:')
+        cantidad=input('Ingrese cantidad de apertura:')
+
+        Cuenta1=Cuenta(titular,cantidad) 
+        Cuenta1.Mostrar()
+        Cuenta1.Ingresar()
+        Cuenta1.Retirar()
+
 
 ## Ejercicio 3 (2 puntos)
 Vamos a definir ahora una “Cuenta Joven”, para ello vamos a crear una nueva
