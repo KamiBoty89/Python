@@ -12,6 +12,84 @@ entradas de datos.
 
 ● esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad.
 
+Respuesta:
+
+    class Persona():
+
+        def __init__(self,nombre,edad,DNI):
+         self.__nombre=nombre
+         self.__edad=edad
+         self.__DNI=DNI
+
+        def getNombre(self):
+            return self.__nombre
+
+        def getEdad(self):
+            return self.__edad
+
+        def getDNI(self):
+            return self.__DNI
+
+        def setNombre(self,nom):
+            self.__nombre=nom
+
+        def setEdad(self,ed):
+            self.__edad=ed
+
+        def setDNI(self,ID):
+            self.__DNI=ID              
+
+        def Mostrar(self):
+         print(f'Nombre: {self.getNombre()}')
+         print(f'Edad: {self.getEdad()}')
+         print(f'DNI: {self.getDNI()}')  
+
+        def esMayorDeEdad(self):
+         if self.getEdad()>=18:
+                print(self.getNombre(), "es mayor de edad")
+         else:
+                print(self.getNombre(), "es menor de edad")  
+
+    def Cadena(cadena):
+         try:
+             str(cadena)
+             return True 
+         except ValueError:
+             return False
+
+    def Edad(edad):
+        try:
+            int(edad)
+            return True
+        except ValueError:
+            return False
+
+
+
+    nombre=input('Ingrese nombre:')
+    if Cadena(nombre):
+        print('Nombre ingresado correctamente')        
+
+    edadb=input('Ingrese edad:')
+
+    if Edad(edadb):
+        print('Edad ingresada correctamente')
+    else:
+        while Edad(edadb)==False:
+         print('Edad ingresada erroneamente')
+         edadb=input('Ingrese edad:')
+        edad=int(edadb) 
+        print('Edad ingresada correctamente')    
+
+    DNI=input('Ingrese DNI:')
+    if Cadena(DNI):
+        print('DNI ingresado correctamente') 
+
+    Persona1=Persona(nombre,edad,DNI) 
+
+    Persona1.Mostrar()
+    Persona1.esMayorDeEdad() 
+
 
 ## Ejercicio 2 (2 puntos)
 Crea una clase llamada Cuenta que tendrá los siguientes atributos: titular (que es
